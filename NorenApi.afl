@@ -1,4 +1,4 @@
-_SECTION_BEGIN("Star Systematic Trading");
+_SECTION_BEGIN("Systematic Trading");
 
 stg      = ParamStr("Strategy Name","Systematic Trading");
 flag     = ParamList("STATE","STOP|START");
@@ -10,7 +10,7 @@ prd      = ParamList("Product","I|C|M");
 
 uniq_name = Name()+GetChartID()+interval(2)+stg;
 
-function  StarFireSignal(aiBuy,aiSell,aiShort,aiCover)
+function  NorenApiFireSignal(aiBuy,aiSell,aiShort,aiCover)
 {
     SignalBuy   = LastValue(Ref(aiBuy,-1));//we need to ignore last candle
     SignalSell  = LastValue(Ref(aiSell,-1));
