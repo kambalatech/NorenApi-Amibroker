@@ -4,7 +4,7 @@ stg      = ParamStr("Strategy Name","Systematic Trading");
 flag     = ParamList("STATE","STOP|START");
 lasttime = StrFormat("%0.f",LastValue(BarIndex()));
 exch     = ParamList("Exchange","NSE|NFO|BSE|CDS");
-tsym     = ParamStr("TradingSymbol","ACC-EQ"); 
+tsym     = ParamStr("TradingSymbol","XYZ-EQ"); 
 qty      = Param("Quantity",1,1,1000,1);
 prd      = ParamList("Product","I|C|M");
 
@@ -39,7 +39,7 @@ function  NorenApiFireSignal(aiBuy,aiSell,aiShort,aiCover)
             trgprc = "0";
             dscqty = "0";
             trantype = "B";
-            prctyp = "L";
+            prctyp = "LMT";
             ret = "DAY";
             remarks = uniq_name;
                 
@@ -52,7 +52,7 @@ function  NorenApiFireSignal(aiBuy,aiSell,aiShort,aiCover)
             trgprc = "0";
             dscqty = "0";
             trantype = "S";
-            prctyp = "L";
+            prctyp = "LMT";
             ret = "DAY";
             remarks = uniq_name;
                 
@@ -65,7 +65,7 @@ function  NorenApiFireSignal(aiBuy,aiSell,aiShort,aiCover)
             trgprc = "0";
             dscqty = "0";
             trantype = "S";
-            prctyp = "L";
+            prctyp = "LMT";
             ret = "DAY";
             remarks = uniq_name;
                 
@@ -78,7 +78,7 @@ function  NorenApiFireSignal(aiBuy,aiSell,aiShort,aiCover)
             trgprc = "0";
             dscqty = "0";
             trantype = "B";
-            prctyp = "L";
+            prctyp = "LMT";
             ret = "DAY";
             remarks = uniq_name;
                 
