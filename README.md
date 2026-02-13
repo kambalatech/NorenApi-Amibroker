@@ -14,9 +14,14 @@
 3. Copy API_CREDENTIALS.INI file to Amibroker folder
 4. Install  visual studio redistributable from https://aka.ms/vs/17/release/vc_redist.x86.exe
 ****
-## First Login:
-Enter Login Credentials provided in the Credentials window. 
-NorenAmicache.dat is created on successful login and restarting Amibroker will read credentials from the same.
+## Login:
+
+1. Get the AuthCode from oauth url 
+	https://rama.kambala.co.in/NorenWeb2.0/authorize/oauth?client_id=<your OAUTH CLIENT_ID>
+2. If its success full you will be redirected to 
+	https://www.yourcallback.com/?code=0c82126f-85ef-40ad-98c2-7099d6c82400
+3. paste the auth code- 0c82126f-85ef-40ad-98c2-7099d6c82400 in the login window to continue.
+
 
 ## AFL strategy:
 One of most important aspects of AFL is that it is an array processing language. It operates on arrays (or rows/vectors) of data. 
